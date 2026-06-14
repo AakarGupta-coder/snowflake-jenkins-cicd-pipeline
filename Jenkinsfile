@@ -45,7 +45,8 @@ pipeline {
                                  -w $SNOWFLAKE_WAREHOUSE \\
                                  -d $SNOWFLAKE_DATABASE \\
                                  -c $SNOWFLAKE_DATABASE.STAGING.CHANGE_HISTORY \\
-                                 --create-change-history-table
+                                 --create-change-history-table \\
+                                 -p "$SNOWFLAKE_PASSWORD"
                 '''
             }
         }
