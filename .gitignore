@@ -1,0 +1,15 @@
+# Ignore SSH keys and sensitive files
+*.pem
+*.key
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore Python virtual environments
+venv/
+__pycache__/
